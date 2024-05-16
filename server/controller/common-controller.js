@@ -1,4 +1,4 @@
-const Payment = require('../Payment')
+// const Payment = require('../Payment')
 const { encrypt_password, jwt_sign, compare_password } = require('../helper')
 const { MovieModel, UserModel, ShowModel, BookingModel } = require('../models/index')
 const ObjectId = require('mongoose').Types.ObjectId
