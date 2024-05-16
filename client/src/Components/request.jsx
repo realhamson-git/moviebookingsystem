@@ -1,7 +1,10 @@
 import axios from 'axios';
 
+// const URL = "http://localhost:5000/api"
+const URL = "http://3.110.159.145:5000/api/"
+
 export const request = axios.create({
-    baseURL: `http://localhost:5000/api`,
+    baseURL: URL,
     headers: {
         'Access-Control-Allow-Origin': '*',
         'auth-token': localStorage.getItem('token')  || null
@@ -9,7 +12,7 @@ export const request = axios.create({
 })
 
 export const userRequest = axios.create({
-    baseURL: `http://localhost:5000/api/user/`,
+    baseURL: `${ URL }/user/`,
     headers: {
         'Access-Control-Allow-Origin': '*',
         'auth-token': localStorage.getItem('token')  || null
@@ -17,7 +20,7 @@ export const userRequest = axios.create({
 })
 
 export const adminRequest = axios.create({
-    baseURL: `http://localhost:5000/api/admin/`,
+    baseURL: `${ URL }/admin/`,
     headers: {
         'Access-Control-Allow-Origin': '*',
         'auth-token': localStorage.getItem('token')  || null

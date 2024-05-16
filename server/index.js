@@ -4,19 +4,20 @@ require('dotenv/config')
 
 const express = require('express');
 const cors = require('cors');
-const ViewRoutes = require('./middleware/morgan')
+const bodyparser = require('body-parser');
 
+const ViewRoutes = require('./middleware/morgan')
 const routes = require('./routes/index')
-// const bodyParser = require('body-parser');
 
 const app  = express();
 const PORT = 5000
 
+app.use(bodyparser.urlencoded({ extended: true }))
+app.use(bodyparser.json())
+
 app.use( cors({ origin: "*" }) )
-app.use(express.json());
+// app.use(express.json());
 
-
-// app.use( bodyParser() )
 
 // Routes
 app.use('/api', ViewRoutes, routes );
