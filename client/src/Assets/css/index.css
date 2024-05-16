@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #020D18;
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* theme colors */
+.bg-blue-dark {
+  background-color: rgb(12, 32, 51);
+}
+
+.bg-blue-light {
+  background-color: #326291;
+}
+
+.navbar {
+  /* background-color: #b894ff; */
+  background-color: #326291;
+}
+
+.movie-card-tile > div, :hover {
+  background-color:"#326291";
+}
+
+.movie-card-title {
+  background: linear-gradient(0deg, rgba(2,13,24,1) 0%, rgba(255,255,255,0) 100%); 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.movie-details {
+  background: #000000e0; 
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.movie-card-title > h3 {
+  position: absolute;
+  bottom: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.image-cover {
+  object-fit: cover;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: aliceblue;
+}
+
+.search-input::placeholder {
+  color: aliceblue;
+}
+
+.search-input:focus {
+  outline: none;
+}
