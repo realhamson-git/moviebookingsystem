@@ -17,7 +17,7 @@ export default () => {
             localStorage.setItem('user', JSON.stringify( data.user ))
             
             setContext( prev => ({ ...prev, user: data.user }))
-            navigate('/dashboard')
+            window.location.replace('/dashboard')
         } catch(error){ 
             console.log(error.response?.data ) 
             window.alert( error.response?.data?.message )
